@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'skills.css';
+@import 'timeline.css';
+
+body {
+  font-family: 'Montserrat' !important;
+  background-color: #061922;
+}
+
+@keyframes intro-container {
+  0%{
+    margin-top: 200px;
+  }
+  100%{
+    margin-top: 100px;
+  }
+}
+@keyframes intro-content {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.no_border {
+  padding: 0px !important;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.container {
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+
+  animation-name: intro-container;
+  animation-duration: 1s;
+}
+
+.content {
+  animation-name: intro-content;
+  animation-duration: 1.5s;
+}
+
+.contactos p {
+  margin-bottom: -12px;
+}
+
+@media all and (min-width:900px){
+  .container {
+    /* padding: 20px 40px; */
+  }
+}
+
+.brand_afuro {
+  font-weight: 600;
+  margin-top: auto;
+  margin-bottom: -20px;
+}
+
+.hola {
+  font-size: 20px;
+}
+
+.title-section h4 {
+  text-align: center;
+  width: fit-content;
+  background-color: #242f36;
+  color: white;
+  font-weight: normal;
+  padding: 4px 7px;
+  margin: auto auto -17px auto;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+/* PORTFOLIO */
+@keyframes portfolio-animation {
+  0%{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px -20px 20px -20px;
+
+  animation-name: portfolio-animation;
+  animation-duration: 1s;
+}
+
+@media all and (min-width:900px){
+  .portfolio {
+    margin: 30px -40px 40px -40px;
+  }
+}
+
+.title-portfolio {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.title-portfolio h4 {
+  background-color: #242f36;
+  color: white;
+  font-weight: normal;
+  padding: 4px 7px;
+  margin: auto;
+  margin-bottom: -24px;
+  z-index: 2;
+}
+
+.portfolio div {
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  width: 50%;
+  height: 200px;
+}
+
+.portfolio div:hover {
+  transform: scale(1.01);
+}
+
+.portfolio div a {
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  opacity: 0.8;
+  color: #323232;
+  font-weight: bold;
+}
+.portfolio div a:link {
+  text-decoration: none;
+}
+
+.design {
+  background-image: url(../img/design.jpg);
+}
+.development {
+  background-image: url(../img/development.jpg);
+}
+
+.design_logos, .development_logos {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.design_logos img, .development_logos img {
+  height: 40px;
+}
+
+.box {
+  margin: 10px 0;
+  background: #f4f4f4;
+  padding: 2px 15px;
+  min-height: 155px;
+}
+
+
+/* SOFTWARE */
+@keyframes software-animation {
+  0%{
+    transform: scale(0.8);
+  }
+}
+
+.design_logos, .development_logos {
+  animation-name: software-animation;
+  animation-duration: 1s;
+}
+
+
+/* EDUCATION */
+.education {
+  color: #0e4a61;
+  background-color: #b3e0f1;
+  padding-bottom: 19px !important;
+}
+
+.education p {
+  margin: 0px;
+  line-height: 1.2;
+}
+
+.studies {
+  min-height: 70px !important;
+}
+
+
+
+/* JOBS */
+.jobs {
+  margin-bottom: -15px;
+}
+
+/* CONTACT */
+.contact {
+  margin: 0 -20px -12px -20px;
+  padding: 1px 0 20px 20px;
+  background-color: #242f36;
+  color: white;
+}
+
+@media all and (min-width:900px){
+  .contact {
+    margin: 0 -40px -12px -40px;
+  }
+}

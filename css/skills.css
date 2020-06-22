@@ -1,0 +1,42 @@
+.container_skill {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.skill_title {
+  margin: 10px 0 0 0;
+}
+
+.skill {
+  text-align: right;
+  padding: 5px 10px 5px 0;
+  color: white;
+}
+
+@keyframes skill-animation {
+  0%{
+    width: 0%;
+  }
+}
+
+.skill {
+  animation-name: skill-animation;
+  animation-duration: 3s;
+}
+
+.branding {width: 99%; background-color: #fb8f2b;}
+.corel {width: 99%; background-color: #4CAF50;}
+.photoshop {width: 90%; background-color: #126ab0;}
+.illustrator {width: 70%; background-color: #df8823;}
+.procreate {width: 60%; background-color: #3e3e3e;}
+
+.rails {width: 99%; background-color: #f44336;}
+.frontend {width: 80%; background-color: #4b866d;}
+.backend {width: 80%; background-color: #864ca1;}
+.html {width: 88%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
